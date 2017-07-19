@@ -1,0 +1,80 @@
+<view class="tip">
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="success" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">选择快递</view>
+  </view>
+  <view class="tip_bor" style="background:rgb(10,186,18);"></view>
+
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="success"/>
+    </view>
+    <view style="font-size:26rpx;color:#696969;">填写发件人信息</view>
+  </view>
+  <view class="tip_bor"  style="background:rgb(10,186,18);"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="success"/>
+    </view>
+    <view style="font-size:26rpx;color:#696969;">填写收件人信息</view>
+  </view>
+  <view class="tip_bor"  style="background:rgb(10,186,18);"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">确认信息</view>
+  </view>
+  <view class="tip_bor"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">下单成功</view>
+  </view>
+</view>
+
+
+<view class="top">
+  <view class="msg">请确认订单信息，确认无误方可下单</view>
+</view>
+
+<view class="body">
+
+  <view class="item2">快递信息</view>
+
+  <view class="item">快递名称:{{chooseCouriers.carrier_name}}</view>
+  <view class="item">快递电话号码:{{chooseCouriers.carrier_phone}}</view>
+
+
+  <view class="item2">发件人信息</view>
+
+  <view class="item">发件人姓名:{{sender.sender_name}}</view>
+  <view class="item">发件人电话号码:{{sender.sender_telphone}}</view>
+  <view class="item">发件人地址:{{sender.sender_province_name}}{{sender.sender_city_name}}{{sender.sender_district_name}}</view>
+  <view class="item">发件人详细地址:{{sender.sender_address}}</view>
+
+  <view class="item2">收件人信息</view>
+
+  <view class="item">收件人姓名:{{recipient.receiver_name}}</view>
+  <view class="item">收件人电话号码:{{recipient.receiver_telphone}}</view>
+  <view class="item">收件人地址:{{recipient.receiver_province_name}}{{recipient.receiver_city_name}}{{recipient.receiver_district_name}}</view>
+  <view class="item">收件人详细地址:{{recipient.receiver_address}}</view>
+
+  <view class="item2">货物信息</view>
+
+  <view class="item">货物名称:{{sender.item_name}}</view>
+
+
+
+</view>
+<view class="btn">
+  <button class="btn_back" style="background: #fff;color:#000;" bindtap="back">上一步</button>
+  <button class="btn_step" bindtap="com">确认下单</button>
+</view>

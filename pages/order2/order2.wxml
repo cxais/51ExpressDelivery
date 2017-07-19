@@ -1,0 +1,92 @@
+<view class="tip">
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="success" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">选择快递</view>
+  </view>
+  <view class="tip_bor" style="background:rgb(10,186,18);"></view>
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="success"/>
+    </view>
+    <view style="font-size:26rpx;color:#696969;">填写发件人信息</view>
+  </view>
+  <view class="tip_bor" style="background:rgb(10,186,18);"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">填写收件人信息</view>
+  </view>
+  <view class="tip_bor"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">确认信息</view>
+  </view>
+  <view class="tip_bor"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">下单成功</view>
+  </view>
+</view>
+
+
+<view class="top">
+  <view class="msg">请填写收件人的信息</view>
+  <!--<image src="../icon/pos.png" class="icon" bindtap="getPos"></image>-->
+</view>
+
+<form bindsubmit="formSubmit">
+  <view class="body">
+    <view class="item">
+      <view style="flex-shrink:0;">姓名:</view>
+      <input name="receiver_name" class="input" />
+    </view>
+    <view class="item">
+      <view style="flex-shrink:0;">电话号码:</view>
+      <input name="receiver_telphone" type="number" maxlength="11" class="input" />
+    </view>
+    <view class="item">
+      <view style="flex-shrink:0;">所在省:</view>
+      <picker class="input" id="{{index}}" bindchange="_province" range-key="Name" range="{{provinces}}">
+        <view class="picker">
+          {{provinces_name}}
+        </view>
+      </picker>
+    </view>
+    <view class="item">
+      <view style="flex-shrink:0;">所在城市:</view>
+      <picker class="input" id="{{index}}" bindchange="_city" range-key="Name" range="{{OneCity}}">
+        <view class="picker">
+          {{cities_name}}
+        </view>
+      </picker>
+    </view>
+    <view class="item">
+      <view style="flex-shrink:0;">所在区:</view>
+      <picker class="input" id="{{index}}" bindchange="_area" range-key="Name" range="{{OneDistricts}}">
+        <view class="picker">
+          {{districts_name}}
+        </view>
+      </picker>
+    </view>
+    <view class="item">
+      <view style="flex-shrink:0;">所在详细地址:</view>
+      <input class="input" name="receiver_address"/>
+    </view>
+  </view>
+    <view class="tip">请确保信息都是真实信息</view>
+
+  <view class="btn">
+    <button class="btn_back" style="background: #fff;color:#000;" bindtap="back">上一步</button>
+    <button class="btn_step" formType="submit">下一步</button>
+  </view>
+</form>

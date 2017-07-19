@@ -1,0 +1,20 @@
+<!--orderList.wxml-->
+<scroll-view scroll-y="true" class="scrollView" bindscrolltolower="lower">
+<block wx:for="{{list}}">
+<view class="item2">
+<view class="item21">
+<view class="item211">
+<text>订单号：{{item.order_no}}</text>
+<text>货物：{{item.item_name}}</text>
+</view>
+<view class="item212">
+<text>{{item.sender_province_name}}{{item.sender_city_name}}{{item.sender_district_name}}-发往-{{item.receiver_province_name}}{{item.receiver_city_name}}{{item.receiver_district_name}}</text>
+</view>
+</view>
+<view class="item22">
+<button bindtap="item22_chedan_click" id="{{item.Id}}" class="btn_chedan" wx:if="{{item.order_status==1}}">撤单</button>
+<button class="btn_chedan_chexiao" wx:if="{{item.order_status==0}}">已撤</button>
+</view>
+</view> 
+</block>
+</scroll-view>

@@ -1,0 +1,19 @@
+@import "../order1/order1.wxss";
+
+
+.item{
+  border-bottom: 1rpx solid #eee;
+}
+
+.item2{
+  height: 100rpx;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-weight: bold;
+  border-bottom: 1rpx solid #eee;
+}
+
+.btn{
+  margin-bottom: 40rpx;
+}

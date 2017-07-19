@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myCenter/myCenter",
+    "pages/myLogistics/myLogistics",
+    "pages/details/details",
+    "pages/lists/lists",
+    "pages/company/company",
+    "pages/order/order",
+    "pages/order3/order3",
+    "pages/order1/order1",
+    "pages/order2/order2",
+    "pages/orderList/orderList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "51寄快递",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/发送信息_填充.png",
+        "iconPath": "images/发送信息.png",
+        "pagePath": "pages/index/index",
+        "text": "寄件"
+      },
+      {
+        "selectedIconPath": "images/物流_填充.png",
+        "iconPath": "images/物流.png",
+        "pagePath": "pages/myLogistics/myLogistics",
+        "text": "物流"
+      },
+      {
+        "selectedIconPath": "images/用户_填充.png",
+        "iconPath": "images/用户.png",
+        "pagePath": "pages/myCenter/myCenter",
+        "text": "我的"
+      }
+    ]
+  }
+}

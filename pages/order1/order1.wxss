@@ -1,0 +1,82 @@
+.btn_step{
+   width: 40%;
+  background: #444;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.btn_back{
+
+  width: 40%;
+  background: #fff;
+  color: #000;
+  height: 80rpx;
+  line-height: 80rpx;
+
+}
+
+page{
+  background: #eee;
+}
+.body{
+  width: 80%;
+  margin:0rpx auto;
+  margin-bottom: 0;
+  /*height: 60vh;*/
+  background: #fff;
+  border-radius: 15rpx;
+}
+.icon{
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  flex-shrink:0;
+}
+.item{
+  font-size: 32rpx;
+  display: flex;
+  padding: 20rpx;
+}
+.input{
+  /*width: 0;*/
+  border-bottom: 1rpx solid #eee;
+  flex-grow:1;
+}
+.top{
+  display: flex;
+  margin: 40rpx auto 20rpx;
+  width: 80%;
+  align-content:center;
+  justify-content: center;
+}
+
+.btn{
+  margin-top: 60rpx;
+  
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.tip{
+  text-align: center;
+  margin: 40rpx;
+}
+
+.tip{
+  display: flex;
+  justify-content: center;
+}
+
+.tip_bor{
+  width: 50rpx;
+  height: 8rpx;
+  background: #444;
+  margin-top: 25rpx;
+  flex-shrink:0;
+  
+}
+
+.tip_item{
+  width: 100rpx;
+}

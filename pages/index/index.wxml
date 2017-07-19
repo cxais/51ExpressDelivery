@@ -1,0 +1,52 @@
+<view class="tip">
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">选择快递</view>
+  </view>
+  <view class="tip_bor"></view>
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">填写发件人信息</view>
+  </view>
+  <view class="tip_bor"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">填写收件人信息</view>
+  </view>
+  <view class="tip_bor"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">确认信息</view>
+  </view>
+  <view class="tip_bor"></view>
+
+  <view class="tip_item">
+    <view class="classname">
+      <icon type="info" color="#444" />
+    </view>
+    <view style="font-size:26rpx;color:#696969;">下单成功</view>
+  </view>
+</view>
+
+
+
+<view class="body">
+  <block wx:for="{{couriers}}">
+    <view class="{{item.choose?'item2':'item'}}" id="{{index}}" bindtap="chooseCouriers">
+      <view class="classname">{{item.carrier_name}}</view>
+      <view class="classname">{{item.carrier_phone}}</view>
+    </view>
+  </block>
+</view>
+
+<button class="btn_step" bindtap="next" >下一步</button>

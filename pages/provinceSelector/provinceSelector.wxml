@@ -1,0 +1,79 @@
+
+<!--pages/proviceSelector/proviceSelector.wxml-->
+<view class="header">
+
+  <!--国家-->
+  <view class="item">
+    <view class="country">
+      <text>{{country}}</text>
+    </view>
+    <image src="../images/downerrow.png" class="errowimg"></image>
+  </view>
+
+  <!--省-->
+  <view class="item" bindtap="showid1">
+    <view class="country">
+      <text>{{provinces_name==''?'省':provinces_name}}</text>
+    </view>
+    <image src="../images/downerrow.png" class="errowimg"></image>
+  </view>
+
+  <!--市-->
+  <view class="item" bindtap="showid2">
+    <view class="country">
+      <text>{{cities_name==''?'市':cities_name}}</text>
+    </view>
+    <image src="../images/downerrow.png" class="errowimg"></image>
+  </view>
+  <!--县-->
+  <view class="item" bindtap="showid3">
+    <view class="country">
+      <text>{{districts_name==''?'区':districts_name}}</text>
+    </view>
+    <image src="../images/downerrow.png" class="errowimg" mode="aspectFit"></image>
+  </view>
+  <view class="header_search" bindtap="navtosearch">搜索</view>
+  <!--header end-->
+</view>
+
+<!--正文-->
+<view class="body">
+  <view class="gonggao">
+    <text style="border-right: 8rpx solid lightgreen;border-left: 8rpx solid lightgreen;padding:8rpx;">公告</text>
+  </view>
+  <view class="content">
+  <view class="content1">
+  <view class="content2">
+    <view style="text-indent:2em;">{{content.txt1}}</view>
+    <view style="color:red;text-indent:2em;margin-top:14rpx">{{content.txtRed}}</view>
+    <view style="text-indent:2em;margin-top:14rpx">{{content.txt2}}</view>
+  </view>
+</view>
+</view>
+</view>
+<view class="logoimg">
+<image src="../images/logo.jpg" style="width:100%;height:400rpx;"></image>
+</view>
+
+<!--选择地区显隐scroll-view-->
+
+<!--省份-->
+<scroll-view scroll-y="true" class="scrollview1" hidden="{{condition1}}">
+  <view id="{{index}}" bindtap="_province" class="chosen" wx:for="{{provinces}}">
+    <view style="border-bottom:1rpx solid rgb(229,229,229)" hover hover-class="hoverclass">{{item.Name}}</view>
+  </view>
+</scroll-view>
+
+<!--市-->
+<scroll-view scroll-y="true" class="scrollview2" hidden="{{condition2}}">
+  <view id="{{index}}" bindtap="_city" class="chosen" wx:for="{{OneCity}}">
+    <view style="border-bottom:1rpx solid rgb(229,229,229)" hover hover-class="hoverclass">{{item.Name}}</view>
+  </view>
+</scroll-view>
+
+<!--县-->
+<scroll-view scroll-y="true" class="scrollview3" hidden="{{condition3}}">
+  <view id="{{index}}" bindtap="_area" class="chosen" wx:for="{{OneDistricts}}">
+    <view style="border-bottom:1rpx solid rgb(229,229,229)" hover hover-class="hoverclass">{{item.Name}}</view>
+  </view>
+</scroll-view>

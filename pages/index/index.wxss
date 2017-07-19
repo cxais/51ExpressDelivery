@@ -1,0 +1,76 @@
+
+
+page{
+  background: #eee;
+}
+
+.body{
+  margin:50rpx auto 0;
+
+  /*height: 120rpx;*/
+  /*background: #fff;*/
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.btn_step{
+   width: 80%;
+  margin: 100rpx auto;
+  background: #444;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.picker{
+  height: 120rpx;
+  line-height: 120rpx;
+  margin-left: 40rpx;  
+  font-size: 32rpx;
+  letter-spacing: 0.3rpx;
+}
+
+
+.item{
+  width: 40%;
+  font-size: 32rpx;
+  margin-top: 50rpx;
+  text-align: center;
+  background: #fff;
+  border-radius: 8rpx;
+  height: 100rpx;
+  line-height: 50rpx;
+}
+.item2{
+  width: 40%;
+  font-size: 32rpx;
+  margin-top: 50rpx;
+  text-align: center;
+  background: #444;
+  border-radius: 8rpx;
+  height: 100rpx;
+  line-height: 50rpx;
+  color: #fff;
+}
+
+.tip{
+  text-align: center;
+  margin: 40rpx;
+}
+
+.tip{
+  display: flex;
+  justify-content: center;
+}
+
+.tip_bor{
+  width: 50rpx;
+  height: 8rpx;
+  background: #444;
+  margin-top: 25rpx;
+  flex-shrink:0;
+  
+}
+
+.tip_item{
+  width: 100rpx;
+}

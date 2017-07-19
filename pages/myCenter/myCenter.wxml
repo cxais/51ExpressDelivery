@@ -1,0 +1,72 @@
+<!--myCenter.wxml-->
+<view class="container">
+<view class="userInfo">
+<view class="item11">
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+</view>
+<view class="item12">
+<view class="item121"><text>{{userInfo.nickName}}，欢迎您！</text></view>
+<view class="item122"><text>寄快递，就用微信小程序51寄快递</text></view>
+</view>
+ </view>
+
+<!--<view class="item2">
+<view class="item21">
+<image class="server-img" src="http://cdn.cxais.com/51kuaidi/images/实名认证.png" background-size="cover"></image>
+</view>
+<view class="item22">实名认证</view>
+</view>-->
+<view class="item2" bindtap="item2_order_click" >
+<view class="item21">
+<image class="server-img" src="http://cdn.cxais.com/51kuaidi/images/订单.png" background-size="cover"></image>
+</view>
+<view class="item22">寄件订单</view>
+</view>
+<view class="item2">
+<view class="item21">
+<image class="server-img" src="http://cdn.cxais.com/51kuaidi/images/地址.png" background-size="cover"></image>
+</view>
+<view class="item22">地址管理</view>
+</view>
+<view class="item2" bindtap="clickContactItem2">
+<view class="item21">
+<image class="server-img" src="http://cdn.cxais.com/51kuaidi/images/客服.png" background-size="cover"></image>
+</view>
+<view class="item222">联系客服</view>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+></contact-button>
+</view>
+ </view>

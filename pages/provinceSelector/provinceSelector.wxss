@@ -1,0 +1,133 @@
+/* pages/proviceSelector/proviceSelector.wxss */
+
+.header {
+  height: 88rpx;
+  border-bottom: 1rpx solid rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  padding: 0 14rpx;
+  font-size: 32rpx;
+}
+
+.header_search {
+  width: 122rpx;
+  background-color: #f33;
+  height: 48rpx;
+  border-radius: 4rpx;
+  line-height: 48rpx;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  margin-right: 11rpx;
+}
+
+/*箭头*/
+
+.errowimg {
+  height: 58rpx;
+  width: 48rpx;
+  border-top: 1rpx solid rgb(229, 229, 229);
+  border-right: 1rpx solid rgb(229, 229, 229);
+  border-bottom: 1rpx solid rgb(229, 229, 229);
+}
+
+/*国家*/
+
+.country {
+  height: 58rpx;
+  width: 88rpx;
+  border: 1rpx solid rgb(229, 229, 229);
+  border-radius: 4rpx;
+  line-height: 58rpx;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*scrollview绝对布局1，省份*/
+
+.scrollview1 {
+  border: 1rpx solid rgb(229, 229, 229);
+  height: 400rpx;
+  width: 138rpx;
+  position: fixed;
+  left: 164rpx;
+  top: 70rpx;
+  z-index: 9999999;
+  background-color: white;
+}
+
+/*scrollview绝对布局2，市级*/
+
+.scrollview2 {
+  border: 1rpx solid rgb(229, 229, 229);
+  height: 400rpx;
+  width: 138rpx;
+  position: fixed;
+  left: 313rpx;
+  top: 70rpx;
+  z-index: 9999999;
+  background-color: white;
+}
+
+/*scrollview绝对布局3，县级*/
+
+.scrollview3 {
+  border: 1rpx solid rgb(229, 229, 229);
+  height: 400rpx;
+  width: 138rpx;
+  position: fixed;
+  left: 462rpx;
+  top: 70rpx;
+  z-index: 9999999;
+  background-color: white;
+}
+
+.hoverclass {
+  background-color: rgb(229, 229, 229);
+}
+
+.chosen {
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 58rpx;
+}
+
+/*正文*/
+
+.body {
+  margin-top: 33rpx;
+  padding: 0 14rpx;
+  font-size: 32rpx;
+}
+
+.gonggao {
+  border-left: 14rpx solid lightseagreen;
+  border-right: 14rpx solid lightseagreen;
+  font-size: 44rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  margin-top: 14rpx;
+  border: 2rpx solid red;
+  padding: 14rpx 14rpx 14rpx 14rpx;
+}
+
+.content1 {
+  border: 2rpx solid green;
+  padding: 14rpx 14rpx 14rpx 14rpx;
+}
+
+.content2 {
+  border: 2rpx solid blue;
+  padding: 30rpx 14rpx 47rpx 14rpx;
+}
+
+.logoimg {
+  margin-top: 14rpx;
+}
